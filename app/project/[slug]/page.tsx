@@ -50,7 +50,7 @@ export default function Project({ params }: { params: { slug: string } }) {
           </h1>
           <div className="w-full flex lg:flex-row flex-col">
             <article className="w-full lg:w-1/2 relative">
-              <div className="w-full lg:h-screen lg:sticky lg:top-0 lg:left-0 pt-10 lg:pt-20 px-8">
+              <div className="w-full lg:h-screen lg:sticky lg:top-0 lg:left-0 pt-10 lg:pt-20 px-2 md:px-8">
                 <div className="flex justify-between items-start">
                   <div className="flex flex-col items-start">
                     <p className="text-xl text-gray-500">Development</p>
@@ -88,8 +88,8 @@ export default function Project({ params }: { params: { slug: string } }) {
                 </div>
               </div>
             </article>
-            <article className="w-full lg:w-1/2 px-8 flex flex-col pt-8 lg:pt-0 items-center justify-center">
-              <p className="font2 text-xl text-white">{item?.description}</p>
+            <article className="w-full lg:w-1/2 px-2 md:px-8 flex flex-col pt-8 lg:pt-20 items-center justify-start">
+              <p className="text-xl text-white">{item?.description}</p>
               <div className="w-full flex flex-col justify-center items-center pb-4">
                 {item?.images.map((item, index) => (
                   <Image

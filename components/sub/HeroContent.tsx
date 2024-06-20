@@ -8,14 +8,13 @@ import {
 } from "@/utils/motion";
 import { BiDownArrow } from "react-icons/bi";
 import Image from "next/image";
-import { Truculenta } from "next/font/google";
 export default function HeroContent() {
   return (
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-8 md:px-20 mt-4 w-full z-[20]">
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+      className="flex flex-row items-center justify-center px-8 md:px-20 w-full z-[20]">
+      <div className="h-full w-full flex flex-col gap-2 justify-center m-auto text-start">
         <motion.a
           href="/cv-fabianromano.pdf"
           target="_blank"

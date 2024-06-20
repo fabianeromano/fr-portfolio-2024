@@ -5,15 +5,26 @@ import { PinContainer } from "../ui/Pin";
 import { projects } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
+import { Card } from "../sub/Card";
 
 const RecentProjects = () => {
   return (
     <div className="w-full" id="projects">
-      <h2 className="mb-8 text-center font-semibold text-5xl lg:text-[110px] font-secondary text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+      <h2 className="text-center leading-tight font-semibold text-5xl lg:text-[110px] font-secondary text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
         Projects
       </h2>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-20 md:gap-16 mt-10">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((item) => (
+          <Card
+            key={item.id}
+            id={item.id}
+            title={item.title}
+            description={item.description}
+            thumbnail={item.thumbnail}
+            icons={item.iconLists}
+          />
+        ))}
+        {/* {projects.map((item) => (
           <a
             href={`/project/${item.id}`}
             key={item.id}
@@ -78,7 +89,7 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                  <p className="flex md:text-sm text-xs text-white">
                     Check Live Site
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
@@ -86,7 +97,7 @@ const RecentProjects = () => {
               </div>
             </PinContainer>
           </a>
-        ))}
+        ))} */}
       </div>
     </div>
   );

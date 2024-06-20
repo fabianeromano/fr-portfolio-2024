@@ -66,7 +66,7 @@ export const projects = [
     development: "FrontEnd",
     application: "Landing Page",
     year: 2024,
-    description: "",
+    description: "Use Html, Javascript, Css and Bootstrap for styles",
     thumbnail: "/images/projects/gameflix.png",
     images: ["/images/projects/gameflix.png"],
     iconLists: [
