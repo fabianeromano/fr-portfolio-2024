@@ -14,7 +14,7 @@ export default function HeroContent() {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-4 w-full z-[20]">
+      className="flex flex-row items-center justify-center px-8 md:px-20 mt-4 w-full z-[20]">
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.a
           href="/cv-fabianromano.pdf"
@@ -52,7 +52,7 @@ export default function HeroContent() {
       </div>
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center">
+        className="md:w-full md:h-full md:flex md:justify-center md:items-center hidden">
         <Image
           src="/images/mainIconsdark.svg"
           alt="work icons"

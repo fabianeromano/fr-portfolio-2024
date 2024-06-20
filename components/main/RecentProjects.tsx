@@ -12,7 +12,7 @@ const RecentProjects = () => {
       <h2 className="mb-8 text-center font-semibold text-5xl lg:text-[110px] font-secondary text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
         Projects
       </h2>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-20 md:gap-16 mt-10">
         {projects.map((item) => (
           <a
             href={`/project/${item.id}`}
